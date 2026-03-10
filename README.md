@@ -54,7 +54,15 @@ source .venv/bin/activate     # Mac/Linux
 You only need to do this once. Every time you open a new terminal, run `source .venv/bin/activate` before working.
 
 
-### 3. Run the main loop
+### 3. Run the tests
+
+```bash
+python -m unittest discover -s tests
+```
+
+This will discover and run all tests in the `tests/` directory without needing pytest installed.
+
+### 4. Run the main loop
 
 ```bash
 python main.py
